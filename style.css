@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color:rgb(5, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color:beige;
+    border-radius: 50%;
+    border: 3px solid black;
+
+
+
+}
+.point{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top :240px;
+    left: 240px;
+}
+    
+
+.clock span{
+    
+    font-style:italic;
+    font-size:x-large;
+    
+    color: rgb(12, 19, 17);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)))
+    
+    
+    
+}
+.handhour{
+    position: absolute;
+    bottom: 50%;
+    left:49%;
+    width: 15px;
+    height: 25%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    
+
+}
+.handminute{
+    position: absolute;
+    bottom: 50%;
+    left:48.5%;
+    width: 15px;
+    height: 40%;
+    background-color: rgb(78, 9, 9);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc());
+
+}
+.handsecond{
+    position: absolute;
+    bottom: 50%;
+    left:49%;
+    width: 10px;
+    height: 40%;
+    background-color:darkblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    rotate: (30deg);
+
+}
